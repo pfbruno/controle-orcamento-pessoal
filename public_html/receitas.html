@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Receitas</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/validacoes.js" defer></script>
+</head>
+<body>
+    <h2>Cadastro de Receita</h2>
+    <form onsubmit="return validarReceita()">
+        <label>Valor: <input type="number" id="valorReceita" required></label><br>
+        <label>Categoria:
+            <select id="categoriaReceita">
+                <option>Salário</option>
+                <option>Freelance</option>
+                <option>Outros</option>
+            </select>
+        </label><br>
+        <label>Descrição: <input type="text" id="descricaoReceita"></label><br>
+        <label>Data: <input type="date" id="dataReceita" required></label><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>

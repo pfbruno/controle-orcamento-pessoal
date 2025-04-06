@@ -1,0 +1,13 @@
+<form onsubmit="return validarDespesa()">
+    <label>Valor: <input type="number" id="valorDespesa" required></label><br>
+    <label>Categoria:
+        <select id="categoriaDespesa">
+            <option>Aluguel</option>
+            <option>Alimentação</option>
+            <option>Lazer</option>
+        </select>
+    </label><br>
+    <label>Descrição: <input type="text" id="descricaoDespesa"></label><br>
+    <label>Data: <input type="date" id="dataDespesa" required></label><br>
+    <button type="submit">Cadastrar</button>
+</form>
